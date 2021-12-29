@@ -22,4 +22,5 @@ public class SubscriptionService implements ApplicationEventPublisherAware {
     public void updateSubscription(String subscriptionId) {
         publisher.publishEvent(new SubscriptionUpdateEvent(this, subscriptionId));
     }
+
 }
